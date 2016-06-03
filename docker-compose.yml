@@ -1,0 +1,7 @@
+front:
+  build: ./squid/
+  volumes:
+    - ./squid/etc/squid.conf:/etc/squid3/squid.conf:ro
+    #    - ./squid/log:/var/log/squid3 
+  ports:
+    - "3128:3128"
